@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { School, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -33,17 +34,26 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <School className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg">SchoolHub Connect</span>
+          {/* <School className="h-6 w-6 text-primary" /> */}
+          <div className="logo">
+            <Image
+              src = {'/img/julitola-logo.png'}
+              width={50}
+              height={50}
+              alt='Julitola-schools.png'
+            >
+
+            </Image>
+          </div>
+          {/* <span className="font-bold font-headline text-lg">SchoolHub Connect</span> */}
         </Link>
         <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors hover:text-primary ${
-                pathname === link.href ? 'text-primary' : 'text-foreground/70'
-              }`}
+              className={`transition-colors hover:text-primary ${pathname === link.href ? 'text-primary' : 'text-foreground/70'
+                }`}
             >
               {link.label}
             </Link>
@@ -84,9 +94,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`w-full rounded-md p-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${
-                  pathname === link.href ? 'bg-accent text-accent-foreground' : 'text-foreground/70'
-                }`}
+                className={`w-full rounded-md p-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${pathname === link.href ? 'bg-accent text-accent-foreground' : 'text-foreground/70'
+                  }`}
               >
                 {link.label}
               </Link>
