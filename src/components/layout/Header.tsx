@@ -38,16 +38,16 @@ export default function Header() {
           <div className="logo">
             <Image
               src = {'/img/julitola-logo.png'}
-              width={50}
-              height={50}
+              width={90}
+              height={70}
               alt='Julitola-schools.png'
             >
 
             </Image>
           </div>
-          {/* <span className="font-bold font-headline text-lg">SchoolHub Connect</span> */}
+          {/* <span className="font-bold font-headline text-lg">Julitola Intl School, Lokoja.</span> */}
         </Link>
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-2 items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}

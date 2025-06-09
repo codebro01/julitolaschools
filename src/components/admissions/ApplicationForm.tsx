@@ -257,7 +257,7 @@ export default function ApplicationForm() {
               <FormLabel>Personal Statement</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us about the student's aspirations, interests, and why they want to join SchoolHub Connect (min. 50 characters)."
+                  placeholder="Tell us about the student's aspirations, interests, and why they want to join Julitola Intl School, Lokoja. (min. 50 characters)."
                   className="min-h-[150px] resize-y"
                   {...field}
                 />

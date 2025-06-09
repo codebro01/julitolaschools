@@ -1,4 +1,4 @@
-# **App Name**: SchoolHub Connect
+# **App Name**: Julitola Intl School, Lokoja.
 
 ## Core Features:
 

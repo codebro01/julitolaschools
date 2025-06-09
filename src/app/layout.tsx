@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'SchoolHub Connect',
+  title: 'Julitola Intl School, Lokoja.',
   description: 'Your all-in-one platform for school management.',
 };
 

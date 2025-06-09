@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2">
             <School className="h-5 w-5 text-primary" />
-            <span className="font-semibold font-headline">SchoolHub Connect</span>
+            <span className="font-semibold font-headline">Julitola Intl School, Lokoja.</span>
           </div>
-          <p>&copy; {new Date().getFullYear()} SchoolHub Connect. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Julitola Intl School, Lokoja.. All rights reserved.</p>
           <div className="flex space-x-4">
             <Link href="#" aria-label="Facebook" className="hover:text-primary transition-colors">
               <Facebook className="h-5 w-5" />

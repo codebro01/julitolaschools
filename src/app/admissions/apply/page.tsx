@@ -11,7 +11,7 @@ export default function ApplyPage() {
           <FileText className="h-16 w-16 mx-auto text-primary mb-4" />
           <CardTitle className="text-4xl font-headline text-primary">Online Admission Application</CardTitle>
           <CardDescription className="text-lg text-foreground/70 mt-2">
-            Please complete the form below to apply for admission to SchoolHub Connect.
+            Please complete the form below to apply for admission to Julitola Intl School, Lokoja..
           </CardDescription>
         </CardHeader>
         <CardContent>

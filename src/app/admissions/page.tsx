@@ -11,7 +11,7 @@ export default function AdmissionsPage() {
           <UserPlus className="h-16 w-16 mx-auto text-primary mb-4" />
           <CardTitle className="text-4xl font-headline text-primary">Admissions</CardTitle>
           <CardDescription className="text-lg text-foreground/70 mt-2">
-            Join our vibrant learning community. Discover the steps to become a SchoolHub Connect student.
+            Join our vibrant learning community. Discover the steps to become a Julitola Intl School, Lokoja. student.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-8">
