@@ -11,7 +11,7 @@ export default function AboutPage() {
         <CardContent className="space-y-6">
           <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-md">
             <Image 
-              src="https://placehold.co/1200x400.png" 
+              src="/img/Julitola-Schools1.jpeg" 
               alt="Diverse group of students collaborating" 
               layout="fill" 
               objectFit="cover"

@@ -62,7 +62,7 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end space-x-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Login</Button>
+              <Button variant="secondary">Login</Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <Link href="/login/student" passHref>
