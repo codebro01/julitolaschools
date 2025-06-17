@@ -56,7 +56,7 @@ export default function AdmissionsPage() {
             </Link>
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
-            For any queries, please contact our admissions office at <a href="mailto:admissions@schoolhub.edu" className="text-primary hover:underline">admissions@schoolhub.edu</a>.
+            For any queries, please contact our admissions office at <a href="mailto:admissions@Julitola.edu" className="text-primary hover:underline">admissions@julitola.edu</a>.
           </p>
         </CardFooter>
       </Card>

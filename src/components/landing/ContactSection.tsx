@@ -17,7 +17,7 @@ export default function ContactSection() {
               <CardTitle className="text-xl font-headline">Our Address</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">123 Education Lane, Knowledge City, KC 90210</p>
+              <p className="text-foreground/80">TPS 62, Block 21 Plot 1 Crusher (Gada-Shagari), Along Okene Road, Lokoja, Kogi State</p>
             </CardContent>
           </Card>
           <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -28,7 +28,7 @@ export default function ContactSection() {
               <CardTitle className="text-xl font-headline">Call Us</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">(123) 456-7890</p>
+              <p className="text-foreground/80">(234) 90 54504321</p>
             </CardContent>
           </Card>
           <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -39,7 +39,7 @@ export default function ContactSection() {
               <CardTitle className="text-xl font-headline">Email Us</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">info@schoolhubconnect.edu</p>
+              <p className="text-foreground/80">info@julitolaconnect.edu</p>
             </CardContent>
           </Card>
         </div>

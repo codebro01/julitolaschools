@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
         <div className="mt-4 text-xs">
           <p>123 Education Lane, Knowledge City, 90210</p>
-          <p>Email: info@schoolhub.edu | Phone: (123) 456-7890</p>
+          <p>Email: info@julitola.edu | Phone: (234) 90 54504321</p>
         </div>
       </div>
     </footer>
