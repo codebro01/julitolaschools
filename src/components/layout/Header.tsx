@@ -18,7 +18,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
   { href: '/admissions', label: 'Admissions' },
-  { href: '/courses', label: 'Courses' },
+  { href: '/academics', label: 'Academics' },
   { href: '/feedback', label: 'Feedback' },
 ];
 
@@ -31,7 +31,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           {/* <School className="h-6 w-6 text-primary" /> */}
@@ -47,7 +47,7 @@ export default function Header() {
           </div>
           {/* <span className="font-bold font-headline text-lg">Julitola Intl School, Lokoja.</span> */}
         </Link>
-        <nav className="hidden md:flex flex-2 items-center space-x-6 text-sm font-medium ml-auto">
+        <nav className="hidden md:flex items-center space-x-6 justify-center text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -59,7 +59,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex  items-center justify-end space-x-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary">Login</Button>

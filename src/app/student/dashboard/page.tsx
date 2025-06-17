@@ -119,14 +119,14 @@ export default function StudentDashboardPage() {
           <Card className="shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center text-xl text-primary">
-                <BookOpen className="mr-2 h-5 w-5" /> My Courses
+                <BookOpen className="mr-2 h-5 w-5" /> Academics
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/70 mb-4">Quickly access your enrolled courses.</p>
+              <p className="text-foreground/70 mb-4">Quickly access your enrolled co</p>
               <Button asChild className="w-full">
-                <Link href="/courses">
-                  View All Courses <ExternalLink className="ml-2 h-4 w-4" />
+                <Link href="/academics">
+                  View Academics <ExternalLink className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </CardContent>

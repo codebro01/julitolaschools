@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-4 text-xs">
-          <p>123 Education Lane, Knowledge City, 90210</p>
+          <p>TPS 62, Block 21 Plot 1 Crusher (Gada-Shagari), Along Okene Road, Lokoja, Kogi State</p>
           <p>Email: info@julitola.edu | Phone: (234) 90 54504321</p>
         </div>
       </div>
