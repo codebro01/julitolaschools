@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <>
       <section className="relative py-20 px-1 md:px-10 md:py-0
-    gap-6 md:gap-0 bg-gradient-to-b from-primary/10 to-background flex flex-col md:flex-row items-center justify-between w-full h-full">
+    gap-6 md:gap-0  flex flex-col md:flex-row items-center justify-between w-full h-full bg-gradient-to-tl from-green-800 via-green-200 to-white">
         {/* This is the left content */}
         <div className="relative">
           <div className="container mx-auto px-4 text-center">
