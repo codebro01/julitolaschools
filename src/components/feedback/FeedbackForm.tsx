@@ -32,7 +32,7 @@ type FeedbackFormValues = z.infer<typeof feedbackFormSchema>;
 export default function FeedbackForm() {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const [originalFeedback, setOriginalFeedback] useState<string | null>(null);
+  const [originalFeedback, setOriginalFeedback] =  useState<string | null>(null);
   const [summarizedFeedback, setSummarizedFeedback] = useState<string | null>(null);
 
   const form = useForm<FeedbackFormValues>({
