@@ -31,7 +31,8 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 w-full  backdrop-blur supports-[backdrop-filter]:bg-white/90 bg-transparent">
+    <header className="sticky flex justify-center items-center top-3 z-50 w-full">
+      <div className='w-[80vw] border-primary rounded-lg  backdrop-blur supports-[backdrop-filter]:bg-black/80'>
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           {/* <School className="h-6 w-6 text-primary" /> */}
@@ -52,7 +53,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors hover:text-primary ${pathname === link.href ? 'text-primary' : 'text-foreground/70'
+              className={`transition-colors hover:text-white/80 text-white ${pathname === link.href ? 'text-primary' : 'text-foreground/70'
                 }`}
             >
               {link.label}
@@ -103,6 +104,7 @@ export default function Header() {
           </nav>
         </div>
       )}
+      </div>
     </header>
   );
 }
