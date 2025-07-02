@@ -5,15 +5,15 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <>
-      <section className="relative py-20 px-1 md:px-10 md:py-0
-    gap-6 md:gap-0  flex flex-col md:flex-row items-center justify-between w-full h-full bg-gradient-to-tl from-green-800 via-green-200 to-white">
+      <section className="relative py-10 px-1 md:px-10 md:py-0
+    gap-6 md:gap-0  flex flex-col md:flex-row items-center justify-between w-full h-full bg-white">
         {/* This is the left content */}
         <div className="relative">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline mb-6 text-primary">
-              Welcome to Julitola Intl School, Lokoja.
+            <h1 className="text-6xl md:text-5xl lg:text-8xl font-bold font-headline mb-6 text-primary text-neutral-700 text-left">
+              Welcome to <span className='text-primary/80'>Julitola Intl School </span> , Lokoja.
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl mx-auto text-left">
               Where we show students capacities they need to change themselves, others, and our overall organizations.
             </p>
             <div className="space-x-4">

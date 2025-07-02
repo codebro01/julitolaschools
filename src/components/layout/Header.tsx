@@ -31,14 +31,14 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40  backdrop-blur supports-[backdrop-filter]:bg-background/60 bg-gradient-to-tl from-green-100 via-green-100 to-white">
+    <header className="sticky top-0 z-50 w-full  backdrop-blur supports-[backdrop-filter]:bg-white/90 bg-transparent">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           {/* <School className="h-6 w-6 text-primary" /> */}
           <div className="logo">
             <Image
               src = {'/img/julitola-logo.png'}
-              width={90}
+              width={120}
               height={70}
               alt='Julitola-schools.png'
             >
@@ -88,7 +88,7 @@ export default function Header() {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="md:hidden border-t border-border/40 bg-background/95  backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <nav className="flex flex-col items-start space-y-2 p-4">
             {navLinks.map((link) => (
               <Link
