@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { SlideUp } from '../motion/SlideUp';
 
 const galleryImages = [
   // { src: "/img/Game-at-JTIS.jpeg", alt: "Students Playing Games", hint: "Students Playing Games" },
@@ -34,7 +36,8 @@ export default function GallerySection() {
         </Card>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:row-span-2 lg:grid-cols-2 gap-3">
         {galleryImages.map((image, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <SlideUp key={index}>
+            <Card  className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-0">
                 <div className="aspect-video relative">
                   <Image
@@ -48,6 +51,7 @@ export default function GallerySection() {
                 </div>
               </CardContent>
             </Card>
+          </SlideUp>
           ))}
       </div>
       

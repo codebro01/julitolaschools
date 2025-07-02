@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import  {RouteLoader}  from '@/components/layout/RouteLoader';
 
 export const metadata: Metadata = {
   title: 'Julitola Intl School, Lokoja.',
@@ -25,6 +26,8 @@ export default function RootLayout({
       <body className="font-body antialiased flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
+        <RouteLoader />
+
           {children}
         </main>
         <Footer />

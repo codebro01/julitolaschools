@@ -77,7 +77,7 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
           <Button
-            variant="ghost"
+            variant="secondary"
             size="icon"
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,7 +94,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`w-full rounded-md p-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${pathname === link.href ? 'bg-accent text-accent-foreground' : 'text-foreground/70'
+                className={`w-full rounded-md p-2 text-sm font-medium transition-colors hover:bg-primary/80 hover:text-primary-foreground ${pathname === link.href ? 'bg-primary/80 text-primary-foreground' : 'text-foreground/70'
                   }`}
               >
                 {link.label}

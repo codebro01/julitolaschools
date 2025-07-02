@@ -1,5 +1,7 @@
+'use client'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { SlideUp } from "../motion/SlideUp";
 
 export default function ContactSection() {
   return (
@@ -9,7 +11,22 @@ export default function ContactSection() {
           Get in Touch
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+      
+          <SlideUp>
+             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <CardHeader>
+              <div className="mx-auto p-3 bg-accent/10 rounded-full w-fit mb-2">
+                 <Phone className="h-8 w-8 text-accent" />
+              </div>
+              <CardTitle className="text-xl font-headline">Call Us</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/80">(234) 90 54504321</p>
+            </CardContent>
+          </Card> 
+          </SlideUp>
+          <SlideUp delay={0.3}>
+              <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
               <div className="mx-auto p-3 bg-primary/10 rounded-full w-fit mb-2">
                 <MapPin className="h-8 w-8 text-primary" />
@@ -20,18 +37,9 @@ export default function ContactSection() {
               <p className="text-foreground/80">TPS 62, Block 21 Plot 1 Crusher (Gada-Shagari), Along Okene Road, Lokoja, Kogi State</p>
             </CardContent>
           </Card>
-          <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader>
-              <div className="mx-auto p-3 bg-accent/10 rounded-full w-fit mb-2">
-                 <Phone className="h-8 w-8 text-accent" />
-              </div>
-              <CardTitle className="text-xl font-headline">Call Us</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-foreground/80">(234) 90 54504321</p>
-            </CardContent>
-          </Card>
-          <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+          </SlideUp>
+          <SlideUp delay={0.4}>
+                <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader>
                <div className="mx-auto p-3 bg-primary/10 rounded-full w-fit mb-2">
                 <Mail className="h-8 w-8 text-primary" />
@@ -42,6 +50,10 @@ export default function ContactSection() {
               <p className="text-foreground/80">info@julitolaconnect.edu</p>
             </CardContent>
           </Card>
+          </SlideUp>
+        
+        
+      
         </div>
       </div>
     </section>

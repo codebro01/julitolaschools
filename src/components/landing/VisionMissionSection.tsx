@@ -1,5 +1,7 @@
+'use client'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Eye, Target } from "lucide-react";
+import { SlideUp } from "../motion/SlideUp";
 
 export default function VisionMissionSection() {
   return (
@@ -9,6 +11,7 @@ export default function VisionMissionSection() {
           Our Guiding Principles
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <SlideUp>
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-row items-center space-x-4 pb-2">
               <div className="p-3 bg-primary/10 rounded-full">
@@ -22,6 +25,8 @@ export default function VisionMissionSection() {
               </p>
             </CardContent>
           </Card>
+          </SlideUp>
+          <SlideUp delay={0.4}>    
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-row items-center space-x-4 pb-2">
               <div className="p-3 bg-accent/10 rounded-full">
@@ -35,6 +40,7 @@ export default function VisionMissionSection() {
               </p>
             </CardContent>
           </Card>
+          </SlideUp>
         </div>
       </div>
     </section>
