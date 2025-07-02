@@ -10,9 +10,9 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '2rem',
       screens: {
-        "2xl": "1400px",
+        '2xl': '1400px',
       },
     },
     extend: {
@@ -38,6 +38,10 @@ export default {
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        greyBlack: {
+          DEFAULT: 'var(--grey-black)',
           foreground: 'hsl(var(--secondary-foreground))',
         },
         muted: {
@@ -103,4 +107,4 @@ export default {
     },
   },
   plugins: [require('tailwindcss-animate')],
-} satisfies Config;
+} satisfies Config

@@ -10,7 +10,7 @@ export default function HeroSection() {
         {/* This is the left content */}
         <div className="relative">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-6xl md:text-5xl lg:text-8xl font-bold font-headline mb-6 text-primary text-neutral-700 text-left">
+            <h1 className="text-6xl md:text-5xl lg:text-8xl font-bold font-headline mb-6 text-neutral-700 text-left">
               Welcome to <span className='text-primary/80'>Julitola Intl School </span> , Lokoja.
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl mx-auto text-left">
