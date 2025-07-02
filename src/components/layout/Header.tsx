@@ -89,7 +89,7 @@ export default function Header() {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border/40  backdrop-blur supports-[backdrop-filter]:bg-black">
+        <div className="md:hidden border-t border-border/40  backdrop-blur supports-[backdrop-filter]:bg-black rounded-b-lg">
           <nav className="flex flex-col items-start space-y-2 p-4">
             {navLinks.map((link) => (
               <Link
