@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <header className="sticky flex justify-center items-center top-3 z-50 w-full">
-      <div className='w-[80vw] border-primary rounded-lg  backdrop-blur supports-[backdrop-filter]:bg-black/80'>
+      <div className='w-[95vw] md:w-[80vw]  border-primary rounded-lg  backdrop-blur supports-[backdrop-filter]:bg-black md:supports-[backdrop-filter]:bg-black/80 '>
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           {/* <School className="h-6 w-6 text-primary" /> */}
@@ -89,13 +89,13 @@ export default function Header() {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border/40 bg-background/95  backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="md:hidden border-t border-border/40  backdrop-blur supports-[backdrop-filter]:bg-black">
           <nav className="flex flex-col items-start space-y-2 p-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`w-full rounded-md p-2 text-sm font-medium transition-colors hover:bg-primary/80 hover:text-primary-foreground ${pathname === link.href ? 'bg-primary/80 text-primary-foreground' : 'text-foreground/70'
+                className={`w-full rounded-md p-2 text-sm font-medium transition-colors text-white hover:bg-white/80 hover:text-primary-foreground ${pathname === link.href ? 'bg-primary/80 text-primary-foreground' : 'text-foreground/70'
                   }`}
               >
                 {link.label}
